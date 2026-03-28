@@ -1,0 +1,18 @@
+# Dependencies
+node_modules/
+
+# Environment variables - NEVER commit these
+.env
+.env.local
+
+# Uploads (user-generated content - use cloud storage in production)
+uploads/
+
+# Test/dev files
+testApp.js
+testAppAuth.js
+testOutput.txt
+
+# Logs
+*.log
+npm-debug.log*
