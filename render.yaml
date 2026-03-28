@@ -1,0 +1,18 @@
+services:
+  - type: web
+      name: roompilot-backend
+          env: node
+              plan: free
+                  region: oregon
+                      buildCommand: npm install && cd server && npm install
+                          startCommand: cd server && npm start
+                              envVars:
+                                    - key: MONGO_URI
+                                            sync: false
+                                                  - key: JWT_SECRET
+                                                          sync: false
+                                                                - key: CLIENT_URL
+                                                                        sync: false
+                                                                              - key: NODE_ENV
+                                                                                      value: production
+                                                                                      
